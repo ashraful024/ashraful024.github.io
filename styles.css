@@ -84,8 +84,7 @@ h3 { font-size: 1.18rem; }
 .hero-copy { display: flex; flex-direction: column; justify-content: center; padding: 4rem 4.5rem 4rem 0; animation: rise-in .5s ease both; }
 .hero-copy h1 { max-width: 720px; margin-bottom: 1.35rem; color: var(--ink); }
 .hero-copy h1 em { color: var(--oxblood); font-style: normal; }
-.role-line { min-height: 1.7rem; margin: -.5rem 0 1.15rem; color: var(--oxblood); font-size: .9rem; font-weight: 760; }
-.rotating-role { min-width: 9.5rem; animation: role-in .35s ease both; }
+.role-line { margin: -.5rem 0 1.15rem; color: var(--oxblood); font-size: .9rem; font-weight: 760; letter-spacing: .015em; }
 .hero-lead { max-width: 680px; margin-bottom: 1.8rem; color: var(--muted); font-size: .98rem; }
 .affiliation-line { margin: -1rem 0 1.75rem; color: var(--muted); font-size: .75rem; font-weight: 700; letter-spacing: .02em; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .65rem; }
@@ -104,7 +103,7 @@ h3 { font-size: 1.18rem; }
 .focus-list { margin: 0; padding: 0; list-style: none; color: var(--muted); }
 .focus-list li { position: relative; padding: .55rem 0 .55rem 1.1rem; border-bottom: 1px solid var(--line); }
 .focus-list li::before { position: absolute; left: 0; top: 1.05rem; width: 5px; height: 5px; border-radius: 50%; content: ""; background: var(--terracotta); }
-.profile-photo { display: block; width: 96px; height: 96px; margin-bottom: 1.5rem; border: 4px solid var(--paper); border-radius: 50%; object-fit: cover; object-position: 50% 42%; box-shadow: 0 9px 20px rgba(73,53,48,.14); }
+.profile-photo { display: block; width: 96px; height: 96px; margin-bottom: 1.5rem; border: 4px solid var(--paper); border-radius: 50%; object-fit: cover; object-position: 50% 42%; filter: saturate(.82) contrast(.98); box-shadow: 0 9px 20px rgba(73,53,48,.14); }
 .profile-status { display: flex; align-items: center; gap: .55rem; margin: 1.6rem 0; color: var(--muted); font-size: .75rem; font-weight: 700; }
 .profile-status span { width: 8px; height: 8px; border-radius: 50%; background: #75805d; box-shadow: 0 0 0 5px rgba(117,128,93,.14); }
 .focus-link, .text-link { display: inline-flex; align-items: center; gap: .6rem; color: var(--oxblood); border-bottom: 1px solid var(--oxblood); font-size: .81rem; font-weight: 750; }
@@ -276,5 +275,4 @@ h3 { font-size: 1.18rem; }
 }
 
 @keyframes rise-in { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
-@keyframes role-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes filter-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
