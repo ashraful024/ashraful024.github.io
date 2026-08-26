@@ -20,7 +20,7 @@ const projects = [
   },
   {
     category: "cancer",
-    label: "Cancer genomics · Statistical analysis · Ongoing",
+    label: "Cancer genomics · Statistical Analyst · Ongoing",
     title: "Geographic Variation in the TP53 Mutation Spectrum",
     description: "I lead the main statistical analysis of geographic differences in TP53 mutations. The work examines hotspot mutations and mutation types across regions while accounting for cancer type, age, and sex.",
     summary: "Leading the statistical analysis of regional differences in TP53 mutations, including adjusted comparisons by cancer type, age, and sex.",
@@ -32,7 +32,7 @@ const projects = [
     title: "Heat Exposure, Health, and Resilience",
     description: "A mixed-method study of 664 outdoor construction workers across nine heat-vulnerable urban environments. The project combines survey and remote-sensing data and contributes to a context-specific heat-resilience scale for Bangladesh.",
     summary: "Combining survey and remote-sensing data to study heat exposure and develop a heat-resilience scale for Bangladesh.",
-    methods: "Remote sensing · urban heat mapping · heat-resilience scale development · reliability analysis · regression",
+    methods: "Remote sensing · urban heat-island mapping · heat-resilience scale development · reliability analysis · regression",
   },
   {
     category: "health",
@@ -95,7 +95,7 @@ const nav = [
 
 function header() {
   return `<header class="site-header"><div class="nav-shell">
-    <a class="brand" href="index.html" aria-label="Ashraful Alam, home"><span><strong>Ashraful Alam</strong><small>Statistics · Data science</small></span></a>
+    <a class="brand" href="index.html" aria-label="Ashraful Alam, home"><span><strong>Ashraful Alam</strong><small>Statistics · Applied research</small></span></a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="sr-only">Toggle navigation</span><span></span><span></span><span></span></button>
     <nav id="primary-navigation" class="primary-nav" aria-label="Main navigation">
       ${nav.map(([key, href, label]) => `<a href="${href}"${page === key ? ' class="active" aria-current="page"' : ""}>${label}</a>`).join("")}
@@ -127,9 +127,9 @@ function publicationRow(item, heading = "h3") {
 
 const pages = {
   home: `<main id="main-content">
-    <section class="home-hero"><div class="hero-copy"><p class="eyebrow">Academic portfolio</p><h1><em>Ashraful Alam</em></h1><p class="role-line"><span class="rotating-role" data-role>Statistician</span></p><p class="hero-lead">I am a statistician and M.Sc. student at Shahjalal University of Science and Technology. I work with agricultural, genomic, public-health, and spatial data using statistical modeling and machine learning.</p><p class="affiliation-line">Department of Statistics · SUST, Bangladesh</p><div class="hero-actions"><a class="button primary" href="research.html">View research</a><a class="button secondary" href="Ashraful-Alam-CV.pdf" target="_blank" rel="noreferrer">View CV</a></div><div class="hero-links"><a href="${links.scholar}" target="_blank" rel="noreferrer">Google Scholar ↗</a><a href="${links.orcid}" target="_blank" rel="noreferrer">ORCID ↗</a><a href="${links.github}" target="_blank" rel="noreferrer">GitHub ↗</a></div></div>
-    <aside class="profile-panel" aria-label="Academic profile summary"><img class="profile-photo" src="ashraful-alam-profile.jpeg" alt="Ashraful Alam"><p class="focus-kicker">Current focus</p><h2>Research areas</h2><ul class="focus-list"><li>Agricultural and genomic prediction</li><li>Biostatistics and public-health research</li><li>Spatial analysis and predictive modeling</li></ul><div class="profile-status"><span></span> Open to research collaboration</div><a class="focus-link" href="about.html">Read my profile <span>→</span></a></aside></section>
-    <section class="metrics-strip" aria-label="Career highlights"><div><strong>5</strong><span>Peer-reviewed publications and proceedings</span></div><div><strong>5</strong><span>Research projects</span></div><div><strong>4</strong><span>Conference presentations</span></div><div><strong>2024–</strong><span>Research experience</span></div></section>
+    <section class="home-hero"><div class="hero-copy"><p class="eyebrow">Academic portfolio</p><h1><em>Ashraful Alam</em></h1><p class="role-line">Statistician · Applied Researcher</p><p class="hero-lead">I am a statistician and M.Sc. student. I use statistical modeling, machine learning, and spatial methods in agricultural, genomic, public-health, and environmental research.</p><p class="affiliation-line">Department of Statistics · Shahjalal University of Science and Technology, Bangladesh</p><div class="hero-actions"><a class="button primary" href="research.html">View research</a><a class="button secondary" href="Ashraful-Alam-CV.pdf" target="_blank" rel="noreferrer">View CV</a></div><div class="hero-links"><a href="${links.scholar}" target="_blank" rel="noreferrer">Google Scholar ↗</a><a href="${links.orcid}" target="_blank" rel="noreferrer">ORCID ↗</a><a href="${links.github}" target="_blank" rel="noreferrer">GitHub ↗</a></div></div>
+    <aside class="profile-panel" aria-label="Academic profile summary"><img class="profile-photo" src="ashraful-alam-profile.jpeg" alt="Portrait of Ashraful Alam" width="96" height="96" decoding="async"><p class="focus-kicker">Research profile</p><h2>Current focus</h2><ul class="focus-list"><li>Agricultural and genomic prediction</li><li>Biostatistics and public-health research</li><li>Spatial analysis and predictive modeling</li></ul><div class="profile-status"><span></span> Open to research collaboration</div><a class="focus-link" href="about.html">Read my profile <span>→</span></a></aside></section>
+    <section class="metrics-strip" aria-label="Career highlights"><div><strong>5</strong><span>Peer-reviewed publications and proceedings</span></div><div><strong>5</strong><span>Selected research projects</span></div><div><strong>4</strong><span>Conference presentations</span></div><div><strong>Since 2024</strong><span>Research experience</span></div></section>
     <section class="section page-shell expertise-section reveal"><div class="section-heading"><div><p class="eyebrow">What I do</p><h2>Areas of expertise</h2></div></div><div class="expertise-grid"><article><span>01</span><h3>Genomic and agricultural research</h3><p>Genomic data analysis, multi-environment trials, G×E and G×E×M modeling, remote sensing, and varietal prediction.</p></article><article><span>02</span><h3>Biostatistics and public health</h3><p>Survey analysis, regression, epidemiological research, maternal and child health, cancer data, and scale development.</p></article><article><span>03</span><h3>Predictive and spatial analysis</h3><p>Machine learning, time-series forecasting, GIS, spatial statistics, model validation, and reproducible workflows.</p></article></div></section>
     <section class="section soft-section reveal"><div class="page-shell"><div class="section-heading"><div><p class="eyebrow">Current work</p><h2>Current research</h2></div><a class="text-link" href="research.html">View all research <span>→</span></a></div><div class="research-grid home-research-grid">${projects.slice(0, 3).map((project, index) => projectCard({ ...project, description: project.summary }, index)).join("")}</div></div></section>
     <section class="section page-shell reveal"><div class="section-heading"><div><p class="eyebrow">Selected work</p><h2>Recent publications</h2></div><a class="text-link" href="publications.html">Full publication list <span>→</span></a></div><div class="publication-list">${publications.slice(0, 3).map((item) => publicationRow(item)).join("")}</div></section>
@@ -181,19 +181,18 @@ menuButton?.addEventListener("click", () => {
   primaryNav?.classList.toggle("is-open", !open);
 });
 
-const roleElement = document.querySelector("[data-role]");
-const roles = ["Statistician", "Applied Researcher", "Data Analyst", "Academic Educator"];
-let roleIndex = 0;
-if (roleElement && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-  window.setInterval(() => {
-    roleIndex = (roleIndex + 1) % roles.length;
-    roleElement.animate(
-      [{ opacity: 0, transform: "translateY(4px)" }, { opacity: 1, transform: "translateY(0)" }],
-      { duration: 350, easing: "ease-out" },
-    );
-    roleElement.textContent = roles[roleIndex];
-  }, 2300);
-}
+primaryNav?.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    menuButton?.setAttribute("aria-expanded", "false");
+    primaryNav.classList.remove("is-open");
+  });
+});
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    menuButton?.setAttribute("aria-expanded", "false");
+    primaryNav?.classList.remove("is-open");
+  }
+});
 
 const filterButtons = document.querySelectorAll("[data-filter]");
 const researchItems = document.querySelectorAll("[data-category]");
